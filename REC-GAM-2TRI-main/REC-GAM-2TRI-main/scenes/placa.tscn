@@ -1,4 +1,4 @@
-[gd_scene format=3]
+[gd_scene format=3 uid="uid://dexng8w1xwu8p"]
 
 [ext_resource type="Script" uid="uid://coqd0v8funs5t" path="res://scripts/placa.gd" id="1_scr"]
 [ext_resource type="Texture2D" uid="uid://dopf1b0186smr" path="res://artes/Ambiente/Decorativos/sign.png" id="2_sign"]
@@ -6,20 +6,20 @@
 [sub_resource type="RectangleShape2D" id="Rect_placa"]
 size = Vector2(44, 40)
 
-[node name="Placa" type="Area2D"]
+[node name="Placa" type="Area2D" unique_id=2115654152]
 script = ExtResource("1_scr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=571167243]
 texture = ExtResource("2_sign")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=754061179]
 shape = SubResource("Rect_placa")
 
-[node name="Mensagem" type="Label" parent="."]
-offset_left = -56.0
-offset_top = -46.0
-offset_right = 56.0
-offset_bottom = -30.0
+[node name="Mensagem" type="Label" parent="." unique_id=1854380176]
+offset_left = -71.0
+offset_top = -43.0
+offset_right = 58.0
+offset_bottom = -27.0
 theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 4
